@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L8g-sl-WVK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L8g-sl-WVK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -104,6 +104,28 @@
                                             <constraints>
                                                 <constraint firstItem="dU5-BM-tpI" firstAttribute="centerX" secondItem="8Ox-e6-4AA" secondAttribute="centerX" id="23P-Td-szo"/>
                                                 <constraint firstItem="dU5-BM-tpI" firstAttribute="centerY" secondItem="8Ox-e6-4AA" secondAttribute="centerY" id="dxT-Df-oly"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="Ehw-hU-e38">
+                                        <rect key="frame" x="0.0" y="367" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ehw-hU-e38" id="lvg-wN-a2M">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-UY-SsO">
+                                                    <rect key="frame" x="163" y="13" width="49" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <state key="normal" title="Login"/>
+                                                    <connections>
+                                                        <action selector="loginButtonTapped:" destination="ugX-jl-FQl" eventType="touchUpInside" id="sYK-0I-6Lh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PAT-UY-SsO" firstAttribute="centerX" secondItem="lvg-wN-a2M" secondAttribute="centerX" id="5zl-5q-epr"/>
+                                                <constraint firstItem="PAT-UY-SsO" firstAttribute="centerY" secondItem="lvg-wN-a2M" secondAttribute="centerY" id="biD-rb-pFY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

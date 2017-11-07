@@ -24,7 +24,7 @@ class SignupTableViewController: UITableViewController
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 4
+        return 5
     }
     
     // MARK: - Actions
@@ -33,5 +33,8 @@ class SignupTableViewController: UITableViewController
         WebService.shared.signup(with: emailTextField.text ?? "shahin", password: passwordTextField.text ?? "password", and: self)
     }
     
-
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        WebService.shared.login(with: emailTextField.text ?? "email", password: passwordTextField.text ?? "password", and: self)
+    }
+    
 }
